@@ -1,0 +1,151 @@
+import { LookItem, CategoryItem, InstagramPost } from '../types';
+
+export const STORE_INFO = {
+  name: 'LAURA KIDS',
+  tagline: 'Moda Infantil',
+  motto: 'Estilo, alegria e looks para cada momento.',
+  instagramHandle: '@laurakids',
+  instagramUrl: 'https://instagram.com/',
+  whatsappUrl: 'https://wa.me/?text=Ol%C3%A1!%20Vim%20pelo%20biosite%20da%20Laura%20Kids%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20looks!',
+  getLookWhatsappUrl: (lookTitle: string, tag: string) =>
+    `https://wa.me/?text=${encodeURIComponent(`Olá! Vi o ${tag} ("${lookTitle}") no biosite da Laura Kids e gostaria de consultar a disponibilidade e tamanhos!`)}`,
+};
+
+export const LOOKS_DATA: LookItem[] = [
+  {
+    id: 'look-1',
+    tag: 'VESTIDOS',
+    title: 'Vestido Floral Encanto',
+    description: 'Vestido rodado com estampa delicada, laço suave e caimento leve para ocasiões especiais.',
+    image: '/images/girl_dress.jpg',
+    category: 'Meninas',
+  },
+  {
+    id: 'look-2',
+    tag: 'LOOK MASCULINO',
+    title: 'Look Polo & Bermuda Casual',
+    description: 'Conjunto moderno com polo em blocos de cores suaves, bermuda alfaiataria infantil e tênis.',
+    image: '/images/boy_look.jpg',
+    category: 'Meninos',
+  },
+  {
+    id: 'look-3',
+    tag: 'NOVIDADES',
+    title: 'Coleção Momentos de Alegria',
+    description: 'Looks completos coordenados para irmãos e momentos inesquecíveis em família.',
+    image: '/images/hero.jpg',
+    category: 'Novidades',
+  },
+  {
+    id: 'look-4',
+    tag: 'CONJUNTOS',
+    title: 'Conjunto Play Conforto',
+    description: 'Conjunto em puro algodão leve e macio, pensado para máxima liberdade de brincadeiras.',
+    image: '/images/sets_look.jpg',
+    category: 'Conjuntos',
+  },
+  {
+    id: 'look-5',
+    tag: 'LOOK FEMININO',
+    title: 'Vestido Doce Primavera',
+    description: 'Visual cheio de graça, com tons alegres e tecido fresco que acompanha o sorriso da criança.',
+    image: '/images/spotlight.jpg',
+    category: 'Meninas',
+  },
+];
+
+export const CATEGORIES_DATA: CategoryItem[] = [
+  {
+    id: 'cat-meninas',
+    title: 'Meninas',
+    emoji: '👗',
+    color: 'from-pink-500/10 to-rose-500/20 text-pink-700 border-pink-200',
+    accentColor: '#EC4899',
+    image: '/images/girl_dress.jpg',
+    tagline: 'Vestidos, blusas e conjuntos encantadores',
+  },
+  {
+    id: 'cat-meninos',
+    title: 'Meninos',
+    emoji: '👕',
+    color: 'from-sky-500/10 to-blue-500/20 text-sky-700 border-sky-200',
+    accentColor: '#0284C7',
+    image: '/images/boy_look.jpg',
+    tagline: 'Camisas polo, camisetas e bermudas estilosas',
+  },
+  {
+    id: 'cat-novidades',
+    title: 'Novidades',
+    emoji: '✨',
+    color: 'from-amber-500/10 to-yellow-500/20 text-amber-700 border-amber-200',
+    accentColor: '#F59E0B',
+    image: '/images/hero.jpg',
+    tagline: 'As últimas peças e tendências da estação',
+  },
+  {
+    id: 'cat-vestidos',
+    title: 'Vestidos',
+    emoji: '🎀',
+    color: 'from-purple-500/10 to-fuchsia-500/20 text-purple-700 border-purple-200',
+    accentColor: '#A855F7',
+    image: '/images/girl_dress.jpg',
+    tagline: 'Modelos rodados, casuais e para festas',
+  },
+  {
+    id: 'cat-conjuntos',
+    title: 'Conjuntos',
+    emoji: '🧸',
+    color: 'from-emerald-500/10 to-teal-500/20 text-emerald-700 border-emerald-200',
+    accentColor: '#10B981',
+    image: '/images/sets_look.jpg',
+    tagline: 'Praticidade, conforto e estilo combinados',
+  },
+  {
+    id: 'cat-looks-infantis',
+    title: 'Looks infantis',
+    emoji: '🌈',
+    color: 'from-orange-500/10 to-red-500/20 text-orange-700 border-orange-200',
+    accentColor: '#F97316',
+    image: '/images/spotlight.jpg',
+    tagline: 'Looks completos para todas as idades',
+  },
+];
+
+export const INSTAGRAM_POSTS: InstagramPost[] = [
+  {
+    id: 'insta-1',
+    image: '/images/hero.jpg',
+    caption: 'Sorrisos que iluminam o dia! ✨ Nossos looks completos são pensados para acompanhar cada passo com conforto e estilo. #laurakids #modainfantil',
+    likes: 342,
+    comments: 28,
+    timeAgo: 'Há 2 horas',
+    lookTag: 'Coleção Alegria',
+  },
+  {
+    id: 'insta-2',
+    image: '/images/girl_dress.jpg',
+    caption: 'Aquele rodadinho perfeito que toda menina ama! 👗 Tecido super leve e toque macio para um dia cheio de brincadeiras. #vestidomenina',
+    likes: 419,
+    comments: 42,
+    timeAgo: 'Ontem',
+    lookTag: 'Vestido Rodado',
+  },
+  {
+    id: 'insta-3',
+    image: '/images/boy_look.jpg',
+    caption: 'Estilo e atitude desde pequeno! 👕 Conjunto moderno com caimento impecável. Quem aguenta tanta fofura? #lookmenino',
+    likes: 286,
+    comments: 19,
+    timeAgo: 'Há 2 dias',
+    lookTag: 'Look Polo Casual',
+  },
+  {
+    id: 'insta-4',
+    image: '/images/sets_look.jpg',
+    caption: 'Conforto total para correr, pular e se divertir à vontade! 🧸 Conjuntinhos em puro algodão. #confortoinfantil',
+    likes: 377,
+    comments: 31,
+    timeAgo: 'Há 3 dias',
+    lookTag: 'Conjuntos Cotton',
+  },
+];

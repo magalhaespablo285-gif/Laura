@@ -1,0 +1,6 @@
+{
+  "name": "Laura Kids - Moda Infantil",
+  "description": "Biosite oficial da Laura Kids: estilo, alegria e looks completos de moda infantil para meninos e meninas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
